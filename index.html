@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mivi_Dog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c32d708144.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="title">
+      <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">mividog</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#features">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="add_Blog.html">Add Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carouselExampleControls">View Blog</a>
+          </li>
+          <li class="nav-item">
+            <a style="cursor:pointer;" class="nav-link" class="login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+        </li>
+        </ul>
+     </div>
+    </nav>
+
+    <!-- login Trial -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-auto">
+                <label for="staticEmail2" class="visually-hidden">Email</label>
+                <input type="text" class="form-control" id="staticEmail2" placeholder="email@example.com">
+              </div>
+              <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-outline-warning mb-3">Confirm identity</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Submit</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end login Trial -->
+      <!-- Title -->
+  
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1>Meet new and interesting dogs <br>nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg down-btn">🍎 Apple</button>
+          <button type="button" class="btn btn-outline-light btn-lg down-btn">🂱 Jack</button>
+        </div>
+        <div class="col-lg-6">
+        <img class="phone_img" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+    </section>
+  
+  
+    <!-- Features -->
+  
+    <section id="features">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <p class="symbol">⬤</i></p>
+          <h3>Who ? We!</h3>
+          <p>Since 2023, We led the pack in educating dog people and helping dogs live a better life.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <p class="symbol">⬤</p>
+          <h3>Aim</h3>
+          <p>Provide Family to each and every dog.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <p class="symbol">⬤</p>
+          <h3>Guaranteed to work.</h3>
+          <p>Serving for dog's life.</p>
+        </div>
+      </div>
+      
+  
+    </section>
+  
+  
+    <!-- Testimonials -->
+  
+    <section id="testimonials">
+      <h2 class="H2-heading">Some Famous Blogs!</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2>People Don't Buy What You Do, They Buy Why You Do It.</h2>
+            <img class="testimonials-img" src="images/dog-img.jpg" alt="dog-profile">
+            <em>Dumru, Chandigarh</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+            <img class="testimonials-img" src="images/bernard.jpeg" alt="lady-profile">
+            <em>Bernard, Delhi</em>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  
+  
+    <!-- Press -->
+  
+    <section id="press">
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+      <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+      <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+  
+    </section>
+  
+  
+    <!-- Pricing -->
+  
+    <section id="pricing">
+  
+      <h2>A Plan for Every Dog's Needs</h2>
+      <p>Simple and Interesting Blog's by Peoples.</p>
+      
+<div class="row">
+  <div class="pricing-col col-lg-4 col-md-6">
+    <!--1-->
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <h3>Rajat</h3>
+    <h2>Trainer</h2>
+    <p class="card-text">Dogs that provide a service, such as seeing-eye dogs and military dogs, or therapy dogs often undergo extensive training in order to perform their job.</p>
+    <a href="#" class="btn btn-outline-success">Happy!</a>
+    </div>
+   </div>
+  </div>
+
+  <div class="pricing-col col-lg-4 col-md-6">
+     <!--2-->
+     <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <h3>Amber Sharma</h3>
+    <h2>Trainer</h2>
+    <p class="card-text">Many dog owners are making the transition from collar to harness. A harness offers you more control of your pup on outdoor adventures, as well as preventing any neck stress that collars could cause. </p>
+    <a href="#" class="btn btn-outline-success">Take Care</a>
+    </div>
+   </div>
+  </div>
+  
+<div class="pricing-col col-lg-4 col-md-6">
+<!--3-->
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+<h3>Gokhley</h3>
+<h2>Teacher</h2>
+<p class="card-text">With dog paws meeting everything from grass to rugged terrain, it only makes sense that their toenails take the hit at times.So what do you do when your dog breaks their nail?</p>
+<a href="https://youtu.be/wYNogsOcmh8" class="btn btn-outline-warning">Read More!</a>
+</div>
+</div>
+  </div>
+   
+
+</div>
+  
+    </section>
+  
+  
+    <!-- Call to Action -->
+  
+    <section id="cta">
+  
+      <h3 class="cta-heading">Find the True Love of Your Dog's Life Today (Itinerary).</h3>
+      <button class="btn btn-lg btn-dark down-btn" type="button">Link-1</button>
+      <button class="btn btn-lg btn-outline-light down-btn" type="button">Link-2</button>
+  
+    </section>
+  
+  
+    <!-- Footer -->
+  
+    <footer id="footer">
+      <i class="foot-icon fa-brands fa-facebook"></i>
+      <i class="foot-icon fa-brands fa-twitter"></i>
+      <i class="foot-icon fa-brands fa-instagram"></i>
+      <i class="foot-icon fa-solid fa-envelope"></i>
+      <p>© Email: Shannuvashisth@gmail.com</p>
+  
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

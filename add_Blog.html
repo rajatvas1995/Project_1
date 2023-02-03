@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mivi_Dog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c32d708144.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="">mividog</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">About us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="add_Blog.html">Add Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">View Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Contact</a>
+      </li>
+    </ul>
+ </div>
+</nav>
+
+<div class="container">
+      <form name="myForm" class="row g-3" class="was-validated" onsubmit="return submitData()" >
+         <legend>Author Details</legend>
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="validationDefault01" name="fname" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Last name</label>
+          <input type="text" name= "lname" class="form-control" id="validationDefault02" value="Auto" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@gmail.com</span>
+           
+            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+           <button class="btn btn-success dropdown-toggle"  data-bs-toggle = "dropdown" type="button">Verify</button>
+          <ul class = "dropdown-menu">
+            <li><a class= "dropdown-item">Phone No.</a></li>
+            <li><a class= "dropdown-item">Email_id</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">State</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>UP</option>
+            <option>HR</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <legend>Blog Details</legend>
+
+        <div class="form-floating mb-3 mt-3 ">
+            <input type="text" class="form-control" id="title" required placeholder="Enter Title" name="title">
+            <label for="title">Expression Heading</label>
+          </div>
+
+          <div class="form-floating mb-3 mt-3">
+            <textarea class="form-control" rows = "10" id="content" name="content" placeholder="Content goes here" required></textarea>
+            <label for="content">Write Views</label>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label" for="invalidCheck2">
+                Agree to terms and conditions
+              </label>
+            </div>
+          </div>
+
+        <div class="col-12">
+          <button class="btn btn-success" type="submit" >Submit form</button>
+        </div>       
+        
+      </form>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src ="formSubmit.js"></script>
+    </body>
+</html>
